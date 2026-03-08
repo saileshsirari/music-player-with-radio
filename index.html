@@ -1,249 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Ultimate Music Player – Offline Music Player with Radio Streaming</title>
 
-<meta name="description" content="Ultimate Music Player for Android. Play offline music, stream thousands of radio stations worldwide, edit tags, change album artwork, and enjoy powerful equalizer and visualizer.">
-
-<meta name="keywords" content="offline music player android, radio streaming app, internet radio stations, mp3 music player android, music player with equalizer, music player tag editor">
+<meta name="description" content="Offline music player with radio streaming, equalizer, visualizer, tag editor and thousands of radio stations worldwide.">
 
 <style>
+
 body{
-font-family: Arial, sans-serif;
 margin:0;
-background:#f4f6f8;
-color:#333;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#0f0f0f,#1c1c1c,#101820);
+color:white;
+}
+
+/* blurred glowing background */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:radial-gradient(circle at 20% 30%, #4f46e5 0%, transparent 40%),
+radial-gradient(circle at 80% 70%, #ff00aa 0%, transparent 40%),
+radial-gradient(circle at 50% 80%, #00e5ff 0%, transparent 40%);
+filter:blur(120px);
+opacity:0.4;
+z-index:-1;
 }
 
 header{
-background:#6a4cff;
-color:white;
-padding:40px 20px;
 text-align:center;
+padding:80px 20px;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+background:linear-gradient(90deg,#00e5ff,#7c3aed,#ff00aa);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+header p{
+font-size:18px;
+color:#ccc;
 }
 
 .container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
 padding:20px;
 }
 
+/* glowing card sections */
+
 .section{
-background:white;
-padding:25px;
-margin:20px 0;
-border-radius:8px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+padding:30px;
+margin:25px 0;
+border-radius:14px;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
 }
 
-h1,h2{
+.section h2{
 margin-top:0;
+color:#00e5ff;
 }
 
 .features li{
 margin-bottom:10px;
+color:#ddd;
 }
 
-.download{
-text-align:center;
-margin-top:20px;
-}
+/* screenshots grid */
 
-.download a{
-background:#34a853;
-color:white;
-padding:14px 22px;
-text-decoration:none;
-font-weight:bold;
-border-radius:6px;
-}
 .screenshots{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
 margin-top:20px;
 }
 
 .screenshots img{
 width:100%;
-border-radius:10px;
-box-shadow:0 2px 6px rgba(0,0,0,0.2);
+border-radius:12px;
+transition:0.3s;
+box-shadow:0 0 20px rgba(0,0,0,0.6);
 }
+
+.screenshots img:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px #7c3aed;
+}
+
+/* download button */
+
+.download{
+text-align:center;
+}
+
+.download a{
+display:inline-block;
+background:linear-gradient(90deg,#00e5ff,#7c3aed);
+padding:15px 28px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+margin-top:15px;
+transition:0.3s;
+}
+
+.download a:hover{
+box-shadow:0 0 20px #7c3aed;
+transform:translateY(-2px);
+}
+
 footer{
 text-align:center;
-padding:20px;
-font-size:14px;
-color:#777;
+padding:30px;
+color:#aaa;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
 <header>
+
 <h1>Ultimate Music Player</h1>
-<p>Offline Music Player with Radio Streaming for Android</p>
-<p>Play your music collection or stream thousands of radio stations worldwide</p>
+
+<p>Offline Music Player + Internet Radio Streaming</p>
+
+<p>Thousands of radio stations • Powerful equalizer • Tag editor • Visualizer</p>
+
 </header>
 
 <div class="container">
 
 <div class="section">
-<h2>Offline Music Player for Android</h2>
+
+<h2>Offline Music Player</h2>
 
 <p>
-Ultimate Music Player is designed for users who want a powerful offline music player combined with internet radio streaming.
+Enjoy your entire music collection without internet connection.  
+Ultimate Music Player is designed for smooth and fast offline playback with powerful library management.
 </p>
-
-<p>
-Enjoy your local music collection without needing an internet connection while also discovering new music through thousands of radio stations worldwide.
-</p>
-
-</div>
-
-
-<div class="section">
-<h2>Key Features</h2>
 
 <ul class="features">
-<li>Fast offline music playback</li>
-<li>Stream thousands of internet radio stations</li>
-<li>Powerful audio equalizer</li>
-<li>Real-time music visualizer</li>
-<li>Edit song tags and metadata</li>
-<li>Change album artwork easily</li>
-<li>Custom themes and skins</li>
-<li>Sleep timer for automatic music stop</li>
+<li>Fast local music playback</li>
+<li>Supports large music libraries</li>
+<li>Browse by artist, album, or songs</li>
 </ul>
 
 </div>
 
 
 <div class="section">
+
 <h2>Stream Thousands of Radio Stations</h2>
 
 <p>
-Discover radio stations from around the world directly inside the app.
+Discover radio stations from around the world including music, news, talk shows and regional broadcasts.
 </p>
 
 <ul class="features">
-<li>Music stations</li>
-<li>Talk shows and podcasts</li>
-<li>News radio</li>
-<li>Regional and international stations</li>
+<li>Thousands of global radio stations</li>
+<li>Top 500 curated stations</li>
+<li>Smooth and reliable streaming</li>
 </ul>
-
-<p>
-Listen to live broadcasts anytime with smooth and reliable streaming.
-</p>
 
 </div>
 
 
 <div class="section">
-<h2>Powerful Equalizer and Visualizer</h2>
 
-<p>
-Enhance your listening experience using built-in audio tools.
-</p>
+<h2>Powerful Audio Tools</h2>
 
 <ul class="features">
 <li>Advanced music equalizer</li>
-<li>Audio presets for different listening styles</li>
 <li>Real-time music visualizer</li>
-<li>Improved sound clarity and bass control</li>
+<li>Improved bass and clarity</li>
 </ul>
 
 </div>
 
 
 <div class="section">
-<h2>Edit Tags and Album Artwork</h2>
 
-<p>
-Organize your music library with built-in editing tools.
-</p>
+<h2>Music Editing Features</h2>
 
 <ul class="features">
-<li>Edit song title, artist, and album</li>
-<li>Update or change album artwork</li>
-<li>Keep your music library clean and organized</li>
+<li>Edit song tags and metadata</li>
+<li>Change album artwork</li>
+<li>Organize music library easily</li>
 </ul>
 
 </div>
 
 
 <div class="section">
-<h2>Custom Themes and Skins</h2>
 
-<p>
-Personalize the appearance of your music player using customizable themes.
-</p>
+<h2>Customization</h2>
 
 <ul class="features">
-<li>Select from different player skins</li>
-<li>Modern and clean UI design</li>
-<li>Customize the look of the music player</li>
+<li>Multiple themes and skins</li>
+<li>Modern customizable interface</li>
+<li>Sleep timer for night listening</li>
 </ul>
 
 </div>
 
 
 <div class="section">
-<h2>Sleep Timer</h2>
-
-<p>
-The built-in sleep timer automatically stops music playback after a selected time.
-</p>
-
-<ul class="features">
-<li>Perfect for listening before sleep</li>
-<li>Works with both offline music and radio</li>
-<li>Helps save battery during long listening sessions</li>
-</ul>
-
-</div>
-
-
-<div class="section download">
-
-<h2>Download the App</h2>
-
-<p>Enjoy offline music playback and global radio streaming on Android.</p>
-
-<a href="#">
-Download on Google Play
-</a>
-
-</div>
-
-  <div class="section">
 
 <h2>App Screenshots</h2>
 
 <div class="screenshots">
 
-<img src="screenshots/01_radio.png" alt="Radio streaming stations">
-<img src="screenshots/02_top500.png" alt="Top 500 radio stations">
-<img src="screenshots/03_offline_player.png" alt="Offline music player android">
-<img src="screenshots/04_equalizer.png" alt="Music player equalizer">
-<img src="screenshots/05_edit_tags.png" alt="Music tag editor android">
-<img src="screenshots/06_artwork.png" alt="Edit album artwork">
-<img src="screenshots/07_themes.png" alt="Music player themes and skins">
-<img src="screenshots/08_sleep_timer.png" alt="Music player sleep timer">
+<img src="screenshots/01_radio.png">
+<img src="screenshots/02_top500.png">
+<img src="screenshots/03_offline_player.png">
+<img src="screenshots/04_equalizer.png">
+<img src="screenshots/05_edit_tags.png">
+<img src="screenshots/06_artwork.png">
+<img src="screenshots/07_themes.png">
+<img src="screenshots/08_sleep_timer.png">
 
 </div>
+
+</div>
+
+<div class="section download">
+
+<h2>Download the App</h2>
+
+<p>Enjoy offline music playback and stream thousands of radio stations worldwide.</p>
+
+<a href="https://play.google.com/store/apps/details?id=frees.com.beautifulapps.media.music.musicplayer.search.player" target="_blank">
+Download on Google Play
+</a>
+</a>
 
 </div>
 
 </div>
 
 <footer>
-<p>Ultimate Music Player © 2026</p>
+
+Ultimate Music Player © 2026
+
 </footer>
 
 </body>
